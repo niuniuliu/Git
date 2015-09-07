@@ -1,0 +1,2940 @@
+01_04_15_DailyWork.txt
+---
+##### Task  
+
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+  dev
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -d dev
+Deleted branch dev (was ce6daeb).
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git commit -d 'fenzhiguanli'
+error: unknown switch `d'
+usage: git commit [options] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git commit -m 'fenzhiguanli'
+[dev 4950101] fenzhiguanli
+ 1 file changed, 2 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git
+usage: git [--version] [--help] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git status
+# On branch dev
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 3 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git status
+# On branch dev
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge
+FETCH_HEAD        ORIG_HEAD         master            origin/gh-pages
+HEAD              dev               origin/HEAD       origin/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge --no-
+--no-commit   --no-edit     --no-ff       --no-log      --no-squash   --no-stat
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge --no-ff -m 'merge with no-ff' dev
+Merge made by the 'recursive' strategy.
+ New.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+*   f8c3e7b merge with no-ff
+|\
+| * 4950101 fenzhiguanli
+|/
+*   303b58a conflit fixed
+|\
+| * ce6daeb dev brach add new.txt last line
+* | 55869e1 master branch new.txt
+|/
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+*   f8c3e7b merge with no-ff
+|\
+| * 4950101 fenzhiguanli
+|/
+*   303b58a conflit fixed
+|\
+| * ce6daeb dev brach add new.txt last line
+* | 55869e1 master branch new.txt
+|/
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+*   f8c3e7b merge with no-ff
+|\
+| * 4950101 fenzhiguanli
+|/
+*   303b58a conflit fixed
+|\
+| * ce6daeb dev brach add new.txt last line
+* | 55869e1 master branch new.txt
+|/
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -d dev
+Deleted branch dev (was 4950101).
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+*   f8c3e7b merge with no-ff
+|\
+| * 4950101 fenzhiguanli
+|/
+*   303b58a conflit fixed
+|\
+| * ce6daeb dev brach add new.txt last line
+* | 55869e1 master branch new.txt
+|/
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --pretty=
+email     format:   full      fuller    medium    oneline   raw       short
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --pretty=oneline
+f8c3e7b66f5955761cb3bd45a7859a6d49336e90 merge with no-ff
+495010194944cce4a5aa27b8db2f66c8f06557a8 fenzhiguanli
+303b58aa9a9c3beeaf806f4f52f5657d54e42401 conflit fixed
+55869e1c548e16940d7500a3c563c80f7312be8d master branch new.txt
+ce6daeb4574e3cbb45f06f05909736dfce751602 dev brach add new.txt last line
+ac8ffcc6ceea31906e48796920d0952b0948a1d3 Merge pull request #1 from tianliu/master
+834f1f2aac44aa00693aca6884d044cfea5f9667 Merge branch 'gh-pages'
+363ab2d12271feda742d243643532519d75cbf51 Merge branch 'dev'
+856b4d81bd17a3115ef39c429f315e2e3a048b1e Merge branch 'master' into gh-pages
+e2609d7ab96efdc80a04d408a514368ec7adaa4d New brance Dev and add Dev.txt file
+2ee6a7fad8ed13782e75670db5840afe347f07f5 first New.txt file
+bad11895541db4e1e05af4cd8c6c5fec92b14748 Create README.md
+19044afbfe75ed15179742f90b760ce986017583 first test demo
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+*   f8c3e7b merge with no-ff
+|\
+| * 4950101 fenzhiguanli
+|/
+*   303b58a conflit fixed
+|\
+| * ce6daeb dev brach add new.txt last line
+* | 55869e1 master branch new.txt
+|/
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash
+No local changes to save
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash
+Saved working directory and index state WIP on master: f8c3e7b merge with no-ff
+HEAD is now at f8c3e7b merge with no-ff
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 5 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reflog
+f8c3e7b HEAD@{0}: checkout: moving from master to master
+f8c3e7b HEAD@{1}: merge dev: Merge made by the 'recursive' strategy.
+303b58a HEAD@{2}: checkout: moving from master to master
+303b58a HEAD@{3}: checkout: moving from dev to master
+4950101 HEAD@{4}: checkout: moving from master to dev
+303b58a HEAD@{5}: checkout: moving from dev to master
+4950101 HEAD@{6}: commit: fenzhiguanli
+303b58a HEAD@{7}: checkout: moving from master to dev
+303b58a HEAD@{8}: commit (merge): conflit fixed
+55869e1 HEAD@{9}: checkout: moving from master to master
+55869e1 HEAD@{10}: checkout: moving from dev to master
+ce6daeb HEAD@{11}: checkout: moving from master to dev
+55869e1 HEAD@{12}: commit: master branch new.txt
+ac8ffcc HEAD@{13}: checkout: moving from dev to master
+ce6daeb HEAD@{14}: commit: dev brach add new.txt last line
+ac8ffcc HEAD@{15}: checkout: moving from master to dev
+ac8ffcc HEAD@{16}: merge gh-pages: Fast-forward
+834f1f2 HEAD@{17}: checkout: moving from gh-pages to master
+ac8ffcc HEAD@{18}: checkout: moving from master to gh-pages
+834f1f2 HEAD@{19}: checkout: moving from gh-pages to master
+ac8ffcc HEAD@{20}: pull: Fast-forward
+856b4d8 HEAD@{21}: checkout: moving from master to gh-pages
+834f1f2 HEAD@{22}: merge gh-pages: Merge made by the 'recursive' strategy.
+363ab2d HEAD@{23}: merge dev: Merge made by the 'recursive' strategy.
+2ee6a7f HEAD@{24}: checkout: moving from gh-pages to master
+856b4d8 HEAD@{25}: merge master: Merge made by the 'recursive' strategy.
+e2609d7 HEAD@{26}: merge dev: Fast-forward
+bad1189 HEAD@{27}: checkout: moving from dev to gh-pages
+e2609d7 HEAD@{28}: checkout: moving from bad11895541db4e1e05af4cd8c6c5fec92b14748 to dev
+bad1189 HEAD@{29}: checkout: moving from master to origin
+2ee6a7f HEAD@{30}: checkout: moving from dev to master
+e2609d7 HEAD@{31}: commit: New brance Dev and add Dev.txt file
+bad1189 HEAD@{32}: checkout: moving from gh-pages to dev
+bad1189 HEAD@{33}: clone: from git@github.com:tianliu/Jekyll_demo.git
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log
+commit f8c3e7b66f5955761cb3bd45a7859a6d49336e90
+Merge: 303b58a 4950101
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 14:48:35 2015 +0800
+
+    merge with no-ff
+
+commit 495010194944cce4a5aa27b8db2f66c8f06557a8
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 14:47:16 2015 +0800
+
+    fenzhiguanli
+
+commit 303b58aa9a9c3beeaf806f4f52f5657d54e42401
+Merge: 55869e1 ce6daeb
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 14:42:24 2015 +0800
+
+    conflit fixed
+
+commit 55869e1c548e16940d7500a3c563c80f7312be8d
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 14:39:55 2015 +0800
+
+    master branch new.txt
+
+commit ce6daeb4574e3cbb45f06f05909736dfce751602
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 14:38:57 2015 +0800
+
+    dev brach add new.txt last line
+
+commit ac8ffcc6ceea31906e48796920d0952b0948a1d3
+Merge: bad1189 834f1f2
+Author: tianliu <skyliugogo@gmail.com>
+Date:   Sun Jan 4 14:28:24 2015 +0800
+
+    Merge pull request #1 from tianliu/master
+
+    Master
+
+commit 834f1f2aac44aa00693aca6884d044cfea5f9667
+Merge: 363ab2d 856b4d8
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 14:25:22 2015 +0800
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --pretty=oneline
+f8c3e7b66f5955761cb3bd45a7859a6d49336e90 merge with no-ff
+495010194944cce4a5aa27b8db2f66c8f06557a8 fenzhiguanli
+303b58aa9a9c3beeaf806f4f52f5657d54e42401 conflit fixed
+55869e1c548e16940d7500a3c563c80f7312be8d master branch new.txt
+ce6daeb4574e3cbb45f06f05909736dfce751602 dev brach add new.txt last line
+ac8ffcc6ceea31906e48796920d0952b0948a1d3 Merge pull request #1 from tianliu/master
+834f1f2aac44aa00693aca6884d044cfea5f9667 Merge branch 'gh-pages'
+363ab2d12271feda742d243643532519d75cbf51 Merge branch 'dev'
+856b4d81bd17a3115ef39c429f315e2e3a048b1e Merge branch 'master' into gh-pages
+e2609d7ab96efdc80a04d408a514368ec7adaa4d New brance Dev and add Dev.txt file
+2ee6a7fad8ed13782e75670db5840afe347f07f5 first New.txt file
+bad11895541db4e1e05af4cd8c6c5fec92b14748 Create README.md
+19044afbfe75ed15179742f90b760ce986017583 first test demo
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout -b issue-101
+Switched to a new branch 'issue-101'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-101)
+$ git status
+# On branch issue-101
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   New.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-101)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-101)
+$ git commit -m 'issue-101'
+[issue-101 d7a6dce] issue-101
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-101)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge --no-ff -m 'merged bug fix issue-101' issue-101
+Merge made by the 'recursive' strategy.
+ New.txt | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -d issue-101
+Deleted branch issue-101 (was d7a6dce).
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 7 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge --no-ff -m 'merged bug fix issue-101' issue-101
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 7 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 7 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: f8c3e7b merge with no-ff
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 7 commits.
+#   (use "git push" to publish your local commits)
+#
+# Unmerged paths:
+#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git add <file>..." to mark resolution)
+#
+#       both modified:      New.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: f8c3e7b merge with no-ff
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: f8c3e7b merge with no-ff
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge
+FETCH_HEAD        ORIG_HEAD         origin/HEAD       origin/master
+HEAD              master            origin/gh-pages
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash
+New.txt: needs merge
+New.txt: needs merge
+New.txt: unmerged (b98d4d5b4575c86460edb2cb40bd3a427eee3ed6)
+New.txt: unmerged (682155e699b40ba7362613e8417a217b8acd813a)
+New.txt: unmerged (6460a85ed029441804e18769ee526e75c1664af3)
+fatal: git-write-tree: error building trees
+Cannot save the current index state
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge
+FETCH_HEAD        ORIG_HEAD         origin/HEAD       origin/master
+HEAD              master            origin/gh-pages
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge
+FETCH_HEAD        ORIG_HEAD         origin/HEAD       origin/master
+HEAD              master            origin/gh-pages
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge master
+error: 'merge' is not possible because you have unmerged files.
+hint: Fix them up in the work tree,
+hint: and then use 'git add/rm <file>' as
+hint: appropriate to mark resolution and make a commit,
+hint: or use 'git commit -a'.
+fatal: Exiting because of an unresolved conflict.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge --help
+Launching default browser to display HTML ...
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git che
+checkout      cherry        cherry-pick
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git che
+checkout      cherry        cherry-pick
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git cherry-pick
+FETCH_HEAD        ORIG_HEAD         origin/HEAD       origin/master
+HEAD              master            origin/gh-pages
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git cherry-pick master
+error: 'cherry-pick' is not possible because you have unmerged files.
+hint: Fix them up in the work tree,
+hint: and then use 'git add/rm <file>' as
+hint: appropriate to mark resolution and make a commit,
+hint: or use 'git commit -a'.
+fatal: cherry-pick failed
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git cherry-pick
+usage: git cherry-pick [options] <commit-ish>...
+   or: git cherry-pick <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add Signed-off-by:
+    -m, --mainline <n>    parent number
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -x                    append commit name
+    --ff                  allow fast-forward
+    --allow-empty         preserve initially empty commits
+    --allow-empty-message
+                          allow commits with empty messages
+    --keep-redundant-commits
+                          keep redundant, empty commits
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: f8c3e7b merge with no-ff
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash apply stash@{0}
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard origin/
+origin/HEAD       origin/gh-pages   origin/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard origin/master
+HEAD is now at ac8ffcc Merge pull request #1 from tianliu/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: f8c3e7b merge with no-ff
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard origin/master
+HEAD is now at ac8ffcc Merge pull request #1 from tianliu/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard origin/
+origin/HEAD       origin/gh-pages   origin/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard origin/
+origin/HEAD       origin/gh-pages   origin/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard origin/HEAD
+HEAD is now at ac8ffcc Merge pull request #1 from tianliu/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: f8c3e7b merge with no-ff
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Unmerged paths:
+#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git add <file>..." to mark resolution)
+#
+#       both modified:      New.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m 'conflict before stash pop'
+U       New.txt
+error: 'commit' is not possible because you have unmerged files.
+hint: Fix them up in the work tree,
+hint: and then use 'git add/rm <file>' as
+hint: appropriate to mark resolution and make a commit,
+hint: or use 'git commit -a'.
+fatal: Exiting because of an unresolved conflict.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: f8c3e7b merge with no-ff
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash apply stash@{0}
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash apply stash@{0}
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard origin/HEAD
+HEAD is now at ac8ffcc Merge pull request #1 from tianliu/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash apply stash@{0}
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash apply stash@{0}
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash apply stash@{0}
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout master
+New.txt: needs merge
+error: you need to resolve your current index first
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard origin/HEAD
+HEAD is now at ac8ffcc Merge pull request #1 from tianliu/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout master
+Already on 'master'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash apply stash@{0}
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash
+apply    branch   clear    create   drop     list     pop      save     show
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash
+apply    branch   clear    create   drop     list     pop      save     show
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash save
+New.txt: needs merge
+New.txt: needs merge
+New.txt: unmerged (b98d4d5b4575c86460edb2cb40bd3a427eee3ed6)
+New.txt: unmerged (e69de29bb2d1d6434b8b29ae775ad8c2e48c5391)
+New.txt: unmerged (6460a85ed029441804e18769ee526e75c1664af3)
+fatal: git-write-tree: error building trees
+Cannot save the current index state
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash merge
+usage: git core\git-stash list [<options>]
+   or: git core\git-stash show [<stash>]
+   or: git core\git-stash drop [-q|--quiet] [<stash>]
+   or: git core\git-stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+   or: git core\git-stash branch <branchname> [<stash>]
+   or: git core\git-stash [save [--patch] [-k|--[no-]keep-index] [-q|--quiet]
+                       [-u|--include-untracked] [-a|--all] [<message>]]
+   or: git core\git-stash clear
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Unmerged paths:
+#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git add <file>..." to mark resolution)
+#
+#       both modified:      New.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge master
+error: 'merge' is not possible because you have unmerged files.
+hint: Fix them up in the work tree,
+hint: and then use 'git add/rm <file>' as
+hint: appropriate to mark resolution and make a commit,
+hint: or use 'git commit -a'.
+fatal: Exiting because of an unresolved conflict.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit '111'
+error: pathspec '111' did not match any file(s) known to git.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m '111'
+[master 55e06b3] 111
+ 1 file changed, 7 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git
+usage: git [--version] [--help] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m '112'
+[master 08a64a7] 112
+ 1 file changed, 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m '113'
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git list
+git: 'list' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+        bisect
+        rev-list
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+New.txt: needs merge
+unable to refresh index
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m '114'
+[master 27d818f] 114
+ 1 file changed, 4 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop --
+--index   --quiet
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop --index
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+Index was not unstashed.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash show
+ New.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash drop
+Dropped refs/stash@{0} (ab7686b8dd97e4b35414e55a6cd236e50edd3101)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash drop
+No stash found.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m '115'
+[master 9f74692] 115
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash
+No local changes to save
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash save
+No local changes to save
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash save
+Saved working directory and index state WIP on master: 9f74692 115
+HEAD is now at 9f74692 115
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git grep
+FETCH_HEAD        ORIG_HEAD         origin/HEAD       origin/master
+HEAD              master            origin/gh-pages
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --gr
+--graph   --grep=
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --gr
+--graph   --grep=
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev=
+.git/        New.txt      _config.yml  _posts/
+Dev/         README.md    _layouts/    index.html
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+* 9f74692 115
+* 27d818f 114
+* 08a64a7 112
+* 55e06b3 111
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout -b issue 102
+fatal: Cannot update paths and switch to branch 'issue' at the same time.
+Did you intend to checkout '102' which can not be resolved as commit?
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout -b issue-102
+Switched to a new branch 'issue-102'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-102)
+$ dir
+sh: dir: command not found
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-102)
+$ ls
+Dev  New.txt  README.md  _config.yml  _layouts  _posts  index.html
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-102)
+$ git status
+# On branch issue-102
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   New.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-102)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-102)
+$ git commit -m 'issue 102'
+[issue-102 7c04c88] issue 102
+ 1 file changed, 3 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-102)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge issue-102
+Updating 9f74692..7c04c88
+Fast-forward
+ New.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git sh
+sh-i18n       shortlog      show          show-branch
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash show
+ New.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: 9f74692 115
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+# On branch master
+# Your branch is ahead of 'origin/master' by 5 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   New.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (4da022c062c6cf244ddbda5afbec3684b5cfe19c)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -b issue-103
+error: unknown switch `b'
+usage: git branch [options] [-r | -a] [--merged | --no-merged]
+   or: git branch [options] [-l] [-f] <branchname> [<start-point>]
+   or: git branch [options] [-r] (-d | -D) <branchname>...
+   or: git branch [options] (-m | -M) [<oldbranch>] <newbranch>
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    --set-upstream        change upstream info
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation (when already exists)
+    --no-merged <commit>  print only not merged branches
+    --merged <commit>     print only merged branches
+    --column[=<style>]    list branches in columns
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout  -b issue-103
+M       New.txt
+Switched to a new branch 'issue-103'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-103)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-103)
+$ git commit -m 'issue-103'
+[issue-103 0773cc2] issue-103
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issue-103)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge issue-10
+issue-102   issue-103
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge issue-103
+Updating 7c04c88..0773cc2
+Fast-forward
+ New.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -d issue-10*
+error: branch 'issue-10*' not found.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -d issue-103
+Deleted branch issue-103 (was 0773cc2).
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -d issue-102
+Deleted branch issue-102 (was 7c04c88).
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git
+usage: git [--version] [--help] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 6 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 6 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   New.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash save
+Saved working directory and index state WIP on master: 0773cc2 issue-103
+HEAD is now at 0773cc2 issue-103
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout -b issues-1
+Switched to a new branch 'issues-1'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issues-1)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issues-1)
+$ git commit -m 'issue-1'
+[issues-1 8544171] issue-1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (issues-1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge issues-1
+Updating 0773cc2..8544171
+Fast-forward
+ New.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: 0773cc2 issue-103
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git reset --hard HEAD
+HEAD is now at 8544171 issue-1
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+* 8544171 issue-1
+* 0773cc2 issue-103
+* 7c04c88 issue 102
+* 9f74692 115
+* 27d818f 114
+* 08a64a7 112
+* 55e06b3 111
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+* 8544171 issue-1
+* 0773cc2 issue-103
+* 7c04c88 issue 102
+* 9f74692 115
+* 27d818f 114
+* 08a64a7 112
+* 55e06b3 111
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge issues-1
+Already up-to-date.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev-commit
+* 8544171 issue-1
+* 0773cc2 issue-103
+* 7c04c88 issue 102
+* 9f74692 115
+* 27d818f 114
+* 08a64a7 112
+* 55e06b3 111
+*   ac8ffcc Merge pull request #1 from tianliu/master
+|\
+| *   834f1f2 Merge branch 'gh-pages'
+| |\
+| | *   856b4d8 Merge branch 'master' into gh-pages
+| | |\
+| * | \   363ab2d Merge branch 'dev'
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 New brance Dev and add Dev.txt file
+| |/
+|/|
+* | bad1189 Create README.md
+* | 19044af first test demo
+ /
+* 2ee6a7f first New.txt file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge issues-1
+Already up-to-date.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git log --graph --pretty=oneline --abbrev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+stash@{0}: WIP on master: 0773cc2 issue-103
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge issues-1
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+error: Your local changes to the following files would be overwritten by merge:
+        New.txt
+Please, commit your changes or stash them before you can merge.
+Aborting
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m 'fix conflict'
+[master 2106749] fix conflict
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m 'fix conflict'
+[master 1554bab] fix conflict
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash pop
+# On branch master
+# Your branch is ahead of 'origin/master' by 9 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+Dropped refs/stash@{0} (53c27831ab4d0aebaa309cb2a3cc5e570138fd24)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git stash list
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git remote
+origin
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git remote -v
+origin  git@github.com:tianliu/Jekyll_demo.git (fetch)
+origin  git@github.com:tianliu/Jekyll_demo.git (push)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git pull
+Already up-to-date.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git push origin master
+Counting objects: 29, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (27/27), 2.46 KiB | 0 bytes/s, done.
+Total 27 (delta 12), reused 0 (delta 0)
+To git@github.com:tianliu/Jekyll_demo.git
+   ac8ffcc..1554bab  master -> master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git pull
+Already up-to-date.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git remote -v
+origin  git@github.com:tianliu/Jekyll_demo.git (fetch)
+origin  git@github.com:tianliu/Jekyll_demo.git (push)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git remote
+origin
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ cat New.txt
+this is master branch
+this is dev branch change
+
+issue 102
+issue-1
+ -- haha issue-1 conflict
+
+·??1üàí
+stash save
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git commit -m 'push fail'
+[master 23e0df4] push fail
+ 1 file changed, 2 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git push origin master
+To git@github.com:tianliu/Jekyll_demo.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:tianliu/Jekyll_demo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first merge the remote changes (e.g.,
+hint: 'git pull') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From github.com:tianliu/Jekyll_demo
+   1554bab..b1c3a4e  master     -> origin/master
+Auto-merging New.txt
+CONFLICT (content): Merge conflict in New.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master|MERGING)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master|MERGING)
+$ git commit -m 'fixde pull conflict'
+[master ee46009] fixde pull conflict
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git push origin master
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 563 bytes | 0 bytes/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+To git@github.com:tianliu/Jekyll_demo.git
+   b1c3a4e..ee46009  master -> master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ ls
+Dev  New.txt  README.md  _config.yml  _layouts  _posts  index.html
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ vi New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git add New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git commit -m 'new dev branch'
+[dev d157cae] new dev branch
+ 1 file changed, 1 insertion(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 294 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To git@github.com:tianliu/Jekyll_demo.git
+   ee46009..d157cae  dev -> dev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log
+commit d157caea2de439e58713f86cc84045e708d03025
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:05:01 2015 +0800
+
+    new dev branch
+
+commit ee460091a19e8b8b2fd91605e799d8b7f811331c
+Merge: 23e0df4 b1c3a4e
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:51:27 2015 +0800
+
+    fixde pull conflict
+
+commit 23e0df43cceb7a2271f75744b1d3041ba0362e13
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:50:00 2015 +0800
+
+    push fail
+
+commit b1c3a4e1cfe005699c9d4ba59981adcc47ce08f9
+Author: tianliu <skyliugogo@gmail.com>
+Date:   Sun Jan 4 15:49:08 2015 +0800
+
+    Update New.txt
+
+commit 1554babda214813bbd04384fd819022a439f1e0b
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:40:14 2015 +0800
+
+    fix conflict
+
+commit 2106749115b5bfd35bafa0b37b388d9d07683307
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:39:28 2015 +0800
+
+    fix conflict
+
+commit 85441719a587d0977da1dc60f1613791cb013bbf
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:33:43 2015 +0800
+
+    issue-1
+
+commit 0773cc29ff5b52837856ebbfc607a82769ee06a6
+Author: Tim Liu <liutim@live.cn>
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git reflog
+d157cae HEAD@{0}: commit: new dev branch
+ee46009 HEAD@{1}: checkout: moving from master to dev
+ee46009 HEAD@{2}: commit (merge): fixde pull conflict
+23e0df4 HEAD@{3}: commit: push fail
+1554bab HEAD@{4}: commit: fix conflict
+2106749 HEAD@{5}: commit: fix conflict
+8544171 HEAD@{6}: merge issues-1: Fast-forward
+0773cc2 HEAD@{7}: checkout: moving from issues-1 to master
+8544171 HEAD@{8}: commit: issue-1
+0773cc2 HEAD@{9}: checkout: moving from master to issues-1
+0773cc2 HEAD@{10}: merge issue-103: Fast-forward
+7c04c88 HEAD@{11}: checkout: moving from issue-103 to master
+0773cc2 HEAD@{12}: commit: issue-103
+7c04c88 HEAD@{13}: checkout: moving from master to issue-103
+7c04c88 HEAD@{14}: merge issue-102: Fast-forward
+9f74692 HEAD@{15}: checkout: moving from issue-102 to master
+7c04c88 HEAD@{16}: commit: issue 102
+9f74692 HEAD@{17}: checkout: moving from master to issue-102
+9f74692 HEAD@{18}: commit: 115
+27d818f HEAD@{19}: commit: 114
+08a64a7 HEAD@{20}: commit: 112
+55e06b3 HEAD@{21}: commit: 111
+ac8ffcc HEAD@{22}: checkout: moving from master to master
+ac8ffcc HEAD@{23}: reset: moving to origin/master
+67b0f1f HEAD@{24}: checkout: moving from master to master
+67b0f1f HEAD@{25}: merge issue-101: Merge made by the 'recursive' strategy.
+f8c3e7b HEAD@{26}: checkout: moving from issue-101 to master
+d7a6dce HEAD@{27}: commit: issue-101
+f8c3e7b HEAD@{28}: checkout: moving from master to issue-101
+f8c3e7b HEAD@{29}: checkout: moving from master to master
+f8c3e7b HEAD@{30}: checkout: moving from master to master
+f8c3e7b HEAD@{31}: merge dev: Merge made by the 'recursive' strategy.
+303b58a HEAD@{32}: checkout: moving from master to master
+303b58a HEAD@{33}: checkout: moving from dev to master
+4950101 HEAD@{34}: checkout: moving from master to dev
+303b58a HEAD@{35}: checkout: moving from dev to master
+4950101 HEAD@{36}: commit: fenzhiguanli
+303b58a HEAD@{37}: checkout: moving from master to dev
+303b58a HEAD@{38}: commit (merge): conflit fixed
+55869e1 HEAD@{39}: checkout: moving from master to master
+55869e1 HEAD@{40}: checkout: moving from dev to master
+ce6daeb HEAD@{41}: checkout: moving from master to dev
+55869e1 HEAD@{42}: commit: master branch new.txt
+ac8ffcc HEAD@{43}: checkout: moving from dev to master
+ce6daeb HEAD@{44}: commit: dev brach add new.txt last line
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch  --set-upstream-to=dev
+FETCH_HEAD        ORIG_HEAD         issues-1          origin/HEAD       origin/gh-pages
+HEAD              dev               master            origin/dev        origin/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch  --set-upstream-to=dev origin/
+origin/HEAD       origin/dev        origin/gh-pages   origin/master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch  --set-upstream-to=dev origin/dev
+fatal: branch 'origin/dev' does not exist
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch  --set-upstream-to=dev origin/dev
+fatal: branch 'origin/dev' does not exist
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> dev
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch  --set-upstream-to=origin/dev dev
+Branch dev set up to track remote branch dev from origin.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git pull
+Already up-to-date.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git pull
+Already up-to-date.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ more New.txt
+sh: more: command not found
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ cat New.txt
+?this is master branch
+this is dev branch change
+
+issue 102
+issue-1
+ -- haha issue-1 conflict
+
+·??§1üàí
+stash save
+
+multi-edit.
+mu
+dev brach
+
+origin/dev
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git status
+# On branch dev
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   New.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git add  New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git commit -m 'origin/dev'
+[dev edc9cd0] origin/dev
+ 1 file changed, 2 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 291 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To git@github.com:tianliu/Jekyll_demo.git
+   d157cae..edc9cd0  dev -> dev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push dev dev
+fatal: 'dev' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin dev
+Everything up-to-date
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ vi New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git add  New.txt
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git commit -m 'origin/dev'
+[dev 8ffe5ff] origin/dev
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin dev
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 291 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To git@github.com:tianliu/Jekyll_demo.git
+   edc9cd0..8ffe5ff  dev -> dev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch
+* dev
+  issues-1
+  master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git checkout master
+Switched to branch 'master'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -d issues-1
+Deleted branch issues-1 (was 8544171).
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch -d dev
+warning: deleting branch 'dev' that has been merged to
+         'refs/remotes/origin/dev', but not yet merged to HEAD.
+Deleted branch dev (was 8ffe5ff).
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge dev
+fatal: dev - not something we can merge
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout dev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout dev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git status
+# On branch master
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout master
+Already on 'master'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag
+v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --pretty=oneline --abbrev-commit
+ee46009 fixde pull conflict
+23e0df4 push fail
+b1c3a4e Update New.txt
+1554bab fix conflict
+2106749 fix conflict
+8544171 issue-1
+0773cc2 issue-103
+7c04c88 issue 102
+9f74692 115
+27d818f 114
+08a64a7 112
+55e06b3 111
+ac8ffcc Merge pull request #1 from tianliu/master
+834f1f2 Merge branch 'gh-pages'
+363ab2d Merge branch 'dev'
+856b4d8 Merge branch 'master' into gh-pages
+e2609d7 New brance Dev and add Dev.txt file
+2ee6a7f first New.txt file
+bad1189 Create README.md
+19044af first test demo
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag v0.9 9544171
+fatal: Failed to resolve '9544171' as a valid ref.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag v0.9 8544171
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag
+v0.9
+v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git sho
+shortlog      show          show-branch
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git sho
+shortlog      show          show-branch
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git show v
+v0.9   v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git show v
+v0.9   v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git show v1.0
+commit ee460091a19e8b8b2fd91605e799d8b7f811331c
+Merge: 23e0df4 b1c3a4e
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:51:27 2015 +0800
+
+    fixde pull conflict
+
+diff --cc New.txt
+index 198b6c2,1a040c3..fa6f8b6
+--- a/New.txt
++++ b/New.txt
+@@@ -1,11 -1,11 +1,12 @@@
+--this is master branch
+++<U+FEFF>this is master branch
+  this is dev branch change
+
+  issue 102
+  issue-1
+   -- haha issue-1 conflict
+
+- <B7><D6>?<B9><DC><C0><ED>
++ ·??§1üàí
+  stash save
+
+- mu
++ multi-edit.
+++mu
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git show v0.9
+commit 85441719a587d0977da1dc60f1613791cb013bbf
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:33:43 2015 +0800
+
+    issue-1
+
+diff --git a/New.txt b/New.txt
+index db67338..ae70309 100644
+--- a/New.txt
++++ b/New.txt
+@@ -2,6 +2,7 @@ this is master branch
+ this is dev branch change
+
+ issue 102
++issue-1
+
+ <B7><D6>?<B9><DC><C0><ED>
+-stash save -- haha conflict
++stash save -- haha issue-1 conflict
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag -a v0.1
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --pretty=oneline --abbrev-commit
+ee46009 fixde pull conflict
+23e0df4 push fail
+b1c3a4e Update New.txt
+1554bab fix conflict
+2106749 fix conflict
+8544171 issue-1
+0773cc2 issue-103
+7c04c88 issue 102
+9f74692 115
+27d818f 114
+08a64a7 112
+55e06b3 111
+ac8ffcc Merge pull request #1 from tianliu/master
+834f1f2 Merge branch 'gh-pages'
+363ab2d Merge branch 'dev'
+856b4d8 Merge branch 'master' into gh-pages
+e2609d7 New brance Dev and add Dev.txt file
+2ee6a7f first New.txt file
+bad1189 Create README.md
+19044af first test demo
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag -a v0.1 -m 'version 0.1 released' 19044af
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git show v0.1
+tag v0.1
+Tagger: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:16:36 2015 +0800
+
+version 0.1 released
+
+commit 19044afbfe75ed15179742f90b760ce986017583
+Author: TimLiu <skyliugogo@gmail.com>
+Date:   Mon May 5 20:08:25 2014 +0800
+
+    first test demo
+
+diff --git a/_config.yml b/_config.yml
+new file mode 100644
+index 0000000..24e9e6a
+--- /dev/null
++++ b/_config.yml
+@@ -0,0 +1 @@
++baseurl: /Jekyll_demo
+diff --git a/_layouts/default.html b/_layouts/default.html
+new file mode 100644
+index 0000000..b035367
+--- /dev/null
++++ b/_layouts/default.html
+@@ -0,0 +1,12 @@
++<!DOCTYPE html>
++<html>
++<head>
++       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
++       <title> {{ page.title }}        </title>
++
++</head>
++<body>
++       {{ content }}
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/_posts/2014-05-05-helloworld.md b/_posts/2014-05-05-helloworld.md
+new file mode 100644
+index 0000000..b04a6d3
+--- /dev/null
++++ b/_posts/2014-05-05-helloworld.md
+@@ -0,0 +1,9 @@
++---
++layout: default
++title: 你好，世界
++---
++<h2>{{ page.title }}</h2>
++
++<p>我的第一篇文章</p>
++
++<p>{{ page.date | date_to_string }}</p>
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..0a98095
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,18 @@
++---
++layout: default
++title: 我的Blog
++---
++<h2>{{ page.title }}</h2>
++<p>最新文章</p>
++<ul>
++
++{% for post in site.posts %}
++
++<li>{{ post.date | date_to_string }}
++
++<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
++
++</li>
++{% endfor %}
++
++</ul>
+\ No newline at end of file
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag
+v0.1
+v0.9
+v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --pretty=oneline --abbrev-commit
+ee46009 fixde pull conflict
+23e0df4 push fail
+b1c3a4e Update New.txt
+1554bab fix conflict
+2106749 fix conflict
+8544171 issue-1
+0773cc2 issue-103
+7c04c88 issue 102
+9f74692 115
+27d818f 114
+08a64a7 112
+55e06b3 111
+ac8ffcc Merge pull request #1 from tianliu/master
+834f1f2 Merge branch 'gh-pages'
+363ab2d Merge branch 'dev'
+856b4d8 Merge branch 'master' into gh-pages
+e2609d7 New brance Dev and add Dev.txt file
+2ee6a7f first New.txt file
+bad1189 Create README.md
+19044af first test demo
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag -s v0.2 -m 'signed version 0.2 released' 2ee6a7f
+gpg: error loading `iconv.dll': The specified module could not be found.
+
+gpg: please see http://www.gnupg.org/download/iconv.html for more information
+gpg: keyblock resource `c:/Users/tliu/.gnupg\secring.gpg': file open error
+gpg: keyblock resource `c:/Users/tliu/.gnupg\pubring.gpg': file open error
+gpg: skipped "Tim Liu <liutim@live.cn>": secret key not available
+gpg: signing failed: secret key not available
+error: gpg failed to sign the data
+error: unable to sign the tag
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag show
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag
+show
+v0.1
+v0.9
+v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git show
+commit ee460091a19e8b8b2fd91605e799d8b7f811331c
+Merge: 23e0df4 b1c3a4e
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:51:27 2015 +0800
+
+    fixde pull conflict
+
+diff --cc New.txt
+index 198b6c2,1a040c3..fa6f8b6
+--- a/New.txt
++++ b/New.txt
+@@@ -1,11 -1,11 +1,12 @@@
+--this is master branch
+++<U+FEFF>this is master branch
+  this is dev branch change
+
+  issue 102
+  issue-1
+   -- haha issue-1 conflict
+
+- <B7><D6>?<B9><DC><C0><ED>
++ ·??§1üàí
+  stash save
+
+- mu
++ multi-edit.
+++mu
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ q
+sh: q: command not found
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag
+.git/        New.txt      _config.yml  _posts/
+Dev/         README.md    _layouts/    index.html
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag
+.git/        New.txt      _config.yml  _posts/
+Dev/         README.md    _layouts/    index.html
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag
+.git/        New.txt      _config.yml  _posts/
+Dev/         README.md    _layouts/    index.html
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag --help
+Launching default browser to display HTML ...
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag -d show
+Deleted tag 'show' (was ee46009)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git tag
+v0.1
+v0.9
+v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --pretty=oneline --abbrev-commit
+FETCH_HEAD        dev               origin/dev        v0.1
+HEAD              master            origin/gh-pages   v0.9
+ORIG_HEAD         origin/HEAD       origin/master     v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --pretty=oneline --abbrev-commit
+ee46009 fixde pull conflict
+23e0df4 push fail
+b1c3a4e Update New.txt
+1554bab fix conflict
+2106749 fix conflict
+8544171 issue-1
+0773cc2 issue-103
+7c04c88 issue 102
+9f74692 115
+27d818f 114
+08a64a7 112
+55e06b3 111
+ac8ffcc Merge pull request #1 from tianliu/master
+834f1f2 Merge branch 'gh-pages'
+363ab2d Merge branch 'dev'
+856b4d8 Merge branch 'master' into gh-pages
+e2609d7 New brance Dev and add Dev.txt file
+2ee6a7f first New.txt file
+bad1189 Create README.md
+19044af first test demo
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --pretty=oneline --abbrev-commit
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git checkout master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git status
+# On branch dev
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git checkout master
+Switched to branch 'master'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge dev
+Already up-to-date.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git tag
+v0.1
+v0.9
+v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git
+usage: git [--version] [--help] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+Did you mean this?
+        branch
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git branch
+  dev
+* master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git merge dev
+Already up-to-date.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin
+FETCH_HEAD        dev               origin/dev        v0.1
+HEAD              master            origin/gh-pages   v0.9
+ORIG_HEAD         origin/HEAD       origin/master     v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin v
+v0.1   v0.9   v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin v
+v0.1   v0.9   v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin v0.
+v0.1   v0.9
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin v0.
+v0.1   v0.9
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin v0.1
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 165 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To git@github.com:tianliu/Jekyll_demo.git
+ * [new tag]         v0.1 -> v0.1
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push tag --
+--all            --force          --receive-pack=  --set-upstream   --verbose
+--dry-run        --mirror         --repo=          --tags
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push tag --
+--all            --force          --receive-pack=  --set-upstream   --verbose
+--dry-run        --mirror         --repo=          --tags
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin --tags
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:tianliu/Jekyll_demo.git
+ * [new tag]         v0.9 -> v0.9
+ * [new tag]         v1.0 -> v1.0
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ ll
+sh: ll: command not found
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ ls -al
+total 8
+drwxr-xr-x    1 tliu     Administ     4096 Jan  4 16:31 .
+drwxr-xr-x    5 tliu     Administ     4096 Jan  4 14:19 ..
+drwxr-xr-x    1 tliu     Administ     4096 Jan  4 16:20 .git
+drwxr-xr-x    1 tliu     Administ        0 Jan  4 14:25 Dev
+-rw-r--r--    1 tliu     Administ      153 Jan  4 16:12 New.txt
+-rw-r--r--    1 tliu     Administ       26 Jan  4 14:25 README.md
+-rw-r--r--    1 tliu     Administ       23 Jan  4 14:25 _config.yml
+drwxr-xr-x    1 tliu     Administ        0 Jan  4 14:25 _layouts
+drwxr-xr-x    1 tliu     Administ        0 Jan  4 14:25 _posts
+-rw-r--r--    1 tliu     Administ      270 Jan  4 14:25 index.html
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ touch .gitignore
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ ls -al
+total 8
+drwxr-xr-x    1 tliu     Administ     4096 Jan  4 16:31 .
+drwxr-xr-x    5 tliu     Administ     4096 Jan  4 14:19 ..
+drwxr-xr-x    1 tliu     Administ     4096 Jan  4 16:20 .git
+-rw-r--r--    1 tliu     Administ        0 Jan  4 16:31 .gitignore
+drwxr-xr-x    1 tliu     Administ        0 Jan  4 14:25 Dev
+-rw-r--r--    1 tliu     Administ      153 Jan  4 16:12 New.txt
+-rw-r--r--    1 tliu     Administ       26 Jan  4 14:25 README.md
+-rw-r--r--    1 tliu     Administ       23 Jan  4 14:25 _config.yml
+drwxr-xr-x    1 tliu     Administ        0 Jan  4 14:25 _layouts
+drwxr-xr-x    1 tliu     Administ        0 Jan  4 14:25 _posts
+-rw-r--r--    1 tliu     Administ      270 Jan  4 14:25 index.html
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git status
+# On branch dev
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       .gitignore
+nothing added to commit but untracked files present (use "git add" to track)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git add .gitignore
+.gitignore
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git add .gitignore
+.gitignore
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git add .
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git commit -m 'add .gitignore file'
+[dev 0600166] add .gitignore file
+ 1 file changed, 3 insertions(+)
+ create mode 100644 .gitignore
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+To git@github.com:tianliu/Jekyll_demo.git
+ ! [rejected]        dev -> dev (non-fast-forward)
+error: failed to push some refs to 'git@github.com:tianliu/Jekyll_demo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin dev
+To git@github.com:tianliu/Jekyll_demo.git
+ ! [rejected]        dev -> dev (non-fast-forward)
+error: failed to push some refs to 'git@github.com:tianliu/Jekyll_demo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch --set-upstream-to=dev
+warning: Not setting branch dev as its own upstream.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch --set-upstream-to=dev dev
+warning: Not setting branch dev as its own upstream.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git branch --set-upstream-to=origin/dev dev
+Branch dev set up to track remote branch dev from origin.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin dev
+To git@github.com:tianliu/Jekyll_demo.git
+ ! [rejected]        dev -> dev (non-fast-forward)
+error: failed to push some refs to 'git@github.com:tianliu/Jekyll_demo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git pull
+Merge made by the 'recursive' strategy.
+ New.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git push origin dev
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 545 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To git@github.com:tianliu/Jekyll_demo.git
+   8ffe5ff..6b89527  dev -> dev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git status
+# On branch dev
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       New Text Document.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git status
+# On branch dev
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log -l
+fatal: Option 'l' requires a value
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log -1
+commit 6b8952739d98438846db0040e11ecc1d36dc654b
+Merge: 0600166 8ffe5ff
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:36:55 2015 +0800
+
+    Merge branch 'dev' of github.com:tianliu/Jekyll_demo into dev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --pretty=oneline
+6b8952739d98438846db0040e11ecc1d36dc654b Merge branch 'dev' of github.com:tianliu/Jekyll_demo into d
+0600166c4d69ff066d1fe470909b54029774ac53 add .gitignore file
+8ffe5ffa469a85de959c825244f2b2a1adfd8ad0 origin/dev
+edc9cd0c17711079daf298332604c2c745007321 origin/dev
+d157caea2de439e58713f86cc84045e708d03025 new dev branch
+ee460091a19e8b8b2fd91605e799d8b7f811331c fixde pull conflict
+23e0df43cceb7a2271f75744b1d3041ba0362e13 push fail
+b1c3a4e1cfe005699c9d4ba59981adcc47ce08f9 Update New.txt
+1554babda214813bbd04384fd819022a439f1e0b fix conflict
+2106749115b5bfd35bafa0b37b388d9d07683307 fix conflict
+85441719a587d0977da1dc60f1613791cb013bbf issue-1
+0773cc29ff5b52837856ebbfc607a82769ee06a6 issue-103
+7c04c8892890fb8e9f737bc1045ca22288aed110 issue 102
+9f74692a2d53a0dc4d0bab18fa41828c2b5c1197 115
+27d818f857eff9ca3d7026037e1fb5aa2b917182 114
+08a64a7e1b74b7137af8ae88850f1f4305eba3d1 112
+55e06b3eab261b87de0d804a8d22726cf10d253f 111
+ac8ffcc6ceea31906e48796920d0952b0948a1d3 Merge pull request #1 from tianliu/master
+834f1f2aac44aa00693aca6884d044cfea5f9667 Merge branch 'gh-pages'
+363ab2d12271feda742d243643532519d75cbf51 Merge branch 'dev'
+856b4d81bd17a3115ef39c429f315e2e3a048b1e Merge branch 'master' into gh-pages
+e2609d7ab96efdc80a04d408a514368ec7adaa4d New brance Dev and add Dev.txt file
+2ee6a7fad8ed13782e75670db5840afe347f07f5 first New.txt file
+bad11895541db4e1e05af4cd8c6c5fec92b14748 Create README.md
+19044afbfe75ed15179742f90b760ce986017583 first test demo
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(b
+old blue)<%an>%Creset' --abbrev-commit
+*   6b89527 - (HEAD, origin/dev, dev) Merge branch 'dev' of github.com:tianliu/Jekyll_demo into dev
+|\
+| * 8ffe5ff - origin/dev (31 minutes ago) <Tim Liu>
+| * edc9cd0 - origin/dev (32 minutes ago) <Tim Liu>
+| * d157cae - new dev branch (35 minutes ago) <Tim Liu>
+* | 0600166 - add .gitignore file (7 minutes ago) <Tim Liu>
+|/
+*   ee46009 - (tag: v1.0, origin/master, master) fixde pull conflict (48 minutes ago) <Tim Liu>
+|\
+| * b1c3a4e - Update New.txt (51 minutes ago) <tianliu>
+* | 23e0df4 - push fail (50 minutes ago) <Tim Liu>
+|/
+* 1554bab - fix conflict (60 minutes ago) <Tim Liu>
+* 2106749 - fix conflict (60 minutes ago) <Tim Liu>
+* 8544171 - (tag: v0.9) issue-1 (66 minutes ago) <Tim Liu>
+* 0773cc2 - issue-103 (68 minutes ago) <Tim Liu>
+* 7c04c88 - issue 102 (69 minutes ago) <Tim Liu>
+* 9f74692 - 115 (72 minutes ago) <Tim Liu>
+* 27d818f - 114 (73 minutes ago) <Tim Liu>
+* 08a64a7 - 112 (75 minutes ago) <Tim Liu>
+* 55e06b3 - 111 (76 minutes ago) <Tim Liu>
+*   ac8ffcc - (origin/gh-pages, origin/HEAD) Merge pull request #1 from tianliu/master (2 hours ago)
+|\
+| *   834f1f2 - Merge branch 'gh-pages' (2 hours ago) <Tim Liu>
+| |\
+| | *   856b4d8 - Merge branch 'master' into gh-pages (2 hours ago) <Tim Liu>
+| | |\
+| * | \   363ab2d - Merge branch 'dev' (2 hours ago) <Tim Liu>
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 - New brance Dev and add Dev.txt file (2 hours ago) <Tim Liu>
+| |/
+|/|
+* | bad1189 - Create README.md (3 hours ago) <tianliu>
+* | 19044af - (tag: v0.1) first test demo (8 months ago) <TimLiu>
+ /
+* 2ee6a7f - first New.txt file (3 hours ago) <Tim Liu>
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(b
+old blue)<%an>%Creset' --abbrev-commit
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git lg
+*   6b89527 - (HEAD, origin/dev, dev) Merge branch 'dev' of github.com:tianliu/Jekyll_demo into dev
+|\
+| * 8ffe5ff - origin/dev (33 minutes ago) <Tim Liu>
+| * edc9cd0 - origin/dev (34 minutes ago) <Tim Liu>
+| * d157cae - new dev branch (37 minutes ago) <Tim Liu>
+* | 0600166 - add .gitignore file (9 minutes ago) <Tim Liu>
+|/
+*   ee46009 - (tag: v1.0, origin/master, master) fixde pull conflict (51 minutes ago) <Tim Liu>
+|\
+| * b1c3a4e - Update New.txt (53 minutes ago) <tianliu>
+* | 23e0df4 - push fail (52 minutes ago) <Tim Liu>
+|/
+* 1554bab - fix conflict (62 minutes ago) <Tim Liu>
+* 2106749 - fix conflict (63 minutes ago) <Tim Liu>
+* 8544171 - (tag: v0.9) issue-1 (68 minutes ago) <Tim Liu>
+* 0773cc2 - issue-103 (70 minutes ago) <Tim Liu>
+* 7c04c88 - issue 102 (72 minutes ago) <Tim Liu>
+* 9f74692 - 115 (74 minutes ago) <Tim Liu>
+* 27d818f - 114 (75 minutes ago) <Tim Liu>
+* 08a64a7 - 112 (77 minutes ago) <Tim Liu>
+* 55e06b3 - 111 (78 minutes ago) <Tim Liu>
+*   ac8ffcc - (origin/gh-pages, origin/HEAD) Merge pull request #1 from tianliu/master (2 hours ago)
+|\
+| *   834f1f2 - Merge branch 'gh-pages' (2 hours ago) <Tim Liu>
+| |\
+| | *   856b4d8 - Merge branch 'master' into gh-pages (2 hours ago) <Tim Liu>
+| | |\
+| * | \   363ab2d - Merge branch 'dev' (2 hours ago) <Tim Liu>
+| |\ \ \
+| | |/ /
+| | | /
+| | |/
+| |/|
+| | * e2609d7 - New brance Dev and add Dev.txt file (2 hours ago) <Tim Liu>
+| |/
+|/|
+* | bad1189 - Create README.md (3 hours ago) <tianliu>
+* | 19044af - (tag: v0.1) first test demo (8 months ago) <TimLiu>
+ /
+* 2ee6a7f - first New.txt file (3 hours ago) <Tim Liu>
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git br
+* dev
+  master
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git st
+# On branch dev
+nothing to commit, working directory clean
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log
+commit 6b8952739d98438846db0040e11ecc1d36dc654b
+Merge: 0600166 8ffe5ff
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:36:55 2015 +0800
+
+    Merge branch 'dev' of github.com:tianliu/Jekyll_demo into dev
+
+commit 0600166c4d69ff066d1fe470909b54029774ac53
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:32:39 2015 +0800
+
+    add .gitignore file
+
+commit 8ffe5ffa469a85de959c825244f2b2a1adfd8ad0
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:09:06 2015 +0800
+
+    origin/dev
+
+commit edc9cd0c17711079daf298332604c2c745007321
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:08:09 2015 +0800
+
+    origin/dev
+
+commit d157caea2de439e58713f86cc84045e708d03025
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:05:01 2015 +0800
+
+    new dev branch
+
+commit ee460091a19e8b8b2fd91605e799d8b7f811331c
+Merge: 23e0df4 b1c3a4e
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:51:27 2015 +0800
+
+    fixde pull conflict
+
+commit 23e0df43cceb7a2271f75744b1d3041ba0362e13
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 15:50:00 2015 +0800
+
+    push fail
+
+commit b1c3a4e1cfe005699c9d4ba59981adcc47ce08f9
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git log -p New.txt
+commit 8ffe5ffa469a85de959c825244f2b2a1adfd8ad0
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:09:06 2015 +0800
+
+    origin/dev
+
+diff --git a/New.txt b/New.txt
+index 2cf6dce..2f89783 100644
+--- a/New.txt
++++ b/New.txt
+@@ -10,6 +10,6 @@ stash save
+
+ multi-edit.
+ mu
+-dev brach^S
++dev brach
+
+-origin/dev
+\ No newline at end of file
++origin/dev
+
+commit edc9cd0c17711079daf298332604c2c745007321
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:08:09 2015 +0800
+
+    origin/dev
+
+diff --git a/New.txt b/New.txt
+index a72c95d..2cf6dce 100644
+--- a/New.txt
++++ b/New.txt
+@@ -11,3 +11,5 @@ stash save
+ multi-edit.
+ mu
+ dev brach^S
++
++origin/dev
+\ No newline at end of file
+
+commit d157caea2de439e58713f86cc84045e708d03025
+Author: Tim Liu <liutim@live.cn>
+Date:   Sun Jan 4 16:05:01 2015 +0800
+
+    new dev branch
+
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git blame New.txt
+ee460091 (Tim Liu 2015-01-04 15:51:27 +0800  1) <U+FEFF>this is master branch
+55e06b3e (Tim Liu 2015-01-04 15:24:14 +0800  2) this is dev branch change
+7c04c889 (Tim Liu 2015-01-04 15:30:28 +0800  3)
+7c04c889 (Tim Liu 2015-01-04 15:30:28 +0800  4) issue 102
+85441719 (Tim Liu 2015-01-04 15:33:43 +0800  5) issue-1
+1554babd (Tim Liu 2015-01-04 15:40:14 +0800  6)  -- haha issue-1 conflict
+7c04c889 (Tim Liu 2015-01-04 15:30:28 +0800  7)
+b1c3a4e1 (tianliu 2015-01-04 15:49:08 +0800  8) ·??§1üàí
+21067491 (Tim Liu 2015-01-04 15:39:28 +0800  9) stash save
+23e0df43 (Tim Liu 2015-01-04 15:50:00 +0800 10)
+b1c3a4e1 (tianliu 2015-01-04 15:49:08 +0800 11) multi-edit.
+ee460091 (Tim Liu 2015-01-04 15:51:27 +0800 12) mu
+8ffe5ffa (Tim Liu 2015-01-04 16:09:06 +0800 13) dev brach
+edc9cd0c (Tim Liu 2015-01-04 16:08:09 +0800 14)
+8ffe5ffa (Tim Liu 2015-01-04 16:09:06 +0800 15) origin/dev
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git merge
+merge       mergetool
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+tortoisemerge emerge vimdiff
+No known merge tool is available.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git mergetool --tool-help
+'git mergetool --tool-<tool>' may be set to one of the following:
+                araxis
+                vimdiff
+                vimdiff2
+
+The following tools are valid, but not currently available:
+                bc3
+                codecompare
+                defaults
+                deltawalker
+                diffuse
+                ecmerge
+                emerge
+                gvimdiff
+                gvimdiff2
+                kdiff3
+                meld
+                opendiff
+                p4merge
+                tkdiff
+                tortoisemerge
+                vim
+                xxdiff
+
+Some of the tools listed above only work in a windowed
+environment. If run in a terminal-only session, they will fail.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+tortoisemerge emerge vimdiff
+No known merge tool is available.
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$ git help config
+Launching default browser to display HTML ...
+
+tliu@TLIU_BJ ~/Data/__Programming_Code__/GitHub/Jekyll_demo (dev)
+$
